@@ -10,7 +10,7 @@ export const AdmProvider = ({ children }) => {
   const [newLicense, setNewLicense] = useState({});
   const [login, setLogin] = useState({});
 
-  const api = "http://api-fisio-tp.vercel.app/api/";
+  const api = "https://api-fisio-tp.vercel.app/api/";
 
   const navigate = useNavigate();
 

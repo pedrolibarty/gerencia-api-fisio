@@ -3,7 +3,7 @@ import { LoginStyled } from "./styles";
 import { AdmContext } from "../../contexts/AdmContext";
 
 const Login = () => {
-  const { login, setLogin } = useContext(AdmContext);
+  const { login, setLogin, handleLogin } = useContext(AdmContext);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,7 +15,7 @@ const Login = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(login); 
+    handleLogin() 
   };
 
   return (

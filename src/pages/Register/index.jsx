@@ -3,7 +3,7 @@ import { RegisterStyled } from "./style";
 import { AdmContext } from "../../contexts/AdmContext";
 
 const Register = () => {
-  const { setIsModal, newLicense, setNewLicense } = useContext(AdmContext);
+  const { setIsModal, newLicense, setNewLicense, createLicense } = useContext(AdmContext);
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -15,7 +15,7 @@ const Register = () => {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log(newLicense);
+    createLicense()
   };
 
   return (
@@ -59,8 +59,8 @@ const Register = () => {
               <span>Dias de licenças:</span>
               <input
                 type="number"
-                name="days"
-                value={newLicense.days || ""}
+                name="days_license"
+                value={newLicense.days_license || ""}
                 onChange={handleChange}
                 id="inp-num"
               />

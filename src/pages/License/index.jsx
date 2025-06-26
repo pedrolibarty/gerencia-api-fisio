@@ -16,7 +16,7 @@ const License = () => {
   return (
     <LicenseStyled>
       <ul className="list-infos">
-        {licens.map((l) => {
+        {licens.filter((l) => l.ind_new === false).map((l) => {
           return (
             <li
               className="infos"
@@ -39,6 +39,7 @@ const License = () => {
               {l.details === true && (
                 <ul className="list-details">
                   <li className="details">Empresa: {l.company}</li>
+                  <li className="details">Arquivo: {l.id_file}</li>
                 </ul>
               )}
             </li>

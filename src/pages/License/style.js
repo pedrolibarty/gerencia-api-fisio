@@ -54,8 +54,12 @@ export const LicenseStyled = styled.section`
 
         margin-bottom: 7px;
 
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+
         .details {
-          font-size: 14px;
+          font-size: 13px;
         }
       }
     }

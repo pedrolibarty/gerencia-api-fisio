@@ -120,6 +120,7 @@ export const AdmProvider = ({ children }) => {
       id,
       name,
       days_license,
+      company,
       id_file,
       ind_new: false,
       status_license: true,

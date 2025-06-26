@@ -126,7 +126,7 @@ export const AdmProvider = ({ children }) => {
     };
 
     try {
-      const res = await fetch(`${api}/update/permission`, {
+      const res = await fetch(`${api}update/permission`, {
         method: "PUT",
         headers: {
           "Content-Type": "application/json",

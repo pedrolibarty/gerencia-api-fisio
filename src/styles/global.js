@@ -7,6 +7,7 @@ export const Global = createGlobalStyle`
 	--color-green: #52DC91;
 	--color-red: #D64550;
     --color-primary: #6C8FD4;
+	--color-grey: #00000050;
 }
 
 html,

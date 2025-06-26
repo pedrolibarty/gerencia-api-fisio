@@ -1,68 +1,74 @@
 import styled from "styled-components";
 
 export const NewStyled = styled.section`
-    margin-top: 30px;
-    width: 90%;
-    max-width: 400px;
+  margin-top: 30px;
+  width: 90%;
+  max-width: 400px;
 
-    ul {
-        width: 100%;
+  ul {
+    width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+
+    li {
+      width: 100%;
 
       display: flex;
-      flex-direction: column;
       align-items: center;
       justify-content: center;
-      gap: 5px;
 
-        li {
-            width: 100%;
+      border: 1px solid var(--color-primary);
+      border-radius: 5px;
 
-            display: flex;
-            align-items: center;
-            justify-content: center;
+      .container {
+        width: 95%;
 
-            border: 1px solid var(--color-primary);
-            border-radius: 5px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
 
-            .container {
-                width: 95%;
+      .awnser {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
 
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
+        margin: 10px 0px;
+      }
 
-            .awnser {
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
-                gap: 5px;
+      button {
+        background-color: transparent;
 
-                margin: 5px 0px;
+        border: 1px solid var(--color-primary);
+        border-radius: 5px;
 
-                p {
-                    font-size: 14px;
-                }
-            }
+        cursor: pointer;
 
-                button {
-                    background-color: transparent;
+        transition: 200ms;
 
-                    border: 1px solid var(--color-primary);
-                    border-radius: 5px;
+        font-family: "Roboto";
+        font-size: 14px;
+      }
 
-                    cursor: pointer;
+      .yes:hover {
+        background-color: var(--color-green);
+      }
 
-                    transition: 200ms;
-
-                    font-family: 'Roboto';
-                    font-size: 14px;
-                }
-
-                .yes:hover {
-                    background-color: var(--color-green);
-                }
+      .content {
+        h2 {
+            font-size: 14px;
         }
+
+        span {
+            font-size: 12px;
+        }
+      }
     }
+  }
 `;
